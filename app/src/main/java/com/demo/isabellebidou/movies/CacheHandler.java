@@ -30,7 +30,7 @@ public class CacheHandler {
     }
 
     public void addBitmapToMemoryCache(String key, Bitmap bitmap) {
-        if (getBitmapFromMemCache(key) == null) {
+        if (getBitmapFromMemCache(key) == null && key!=null && bitmap!=null) {
             mMemoryCache.put(key, bitmap);
         }
     }

@@ -27,7 +27,6 @@ public class Video  implements Parcelable {
         super();
     }
 
-
     public Video(Integer movieId,String views, String title, String thumb, String file, String duration, String date, Uploader uploader) {
         this.movieId = movieId;
         this.views = views;
